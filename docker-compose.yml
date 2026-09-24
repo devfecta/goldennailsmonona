@@ -1,0 +1,28 @@
+services:
+  goldennails-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: GoldenNails-Server
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - .:/
+      - /node_modules
+    networks:
+      - goldennails-network
+    deploy:
+        resources:
+            limits:
+              cpus: "0.5"
+              memory: 2G
+            reservations:
+              cpus: "0.25"
+              memory: 512M
+
+
+networks:
+  goldennails-network:
