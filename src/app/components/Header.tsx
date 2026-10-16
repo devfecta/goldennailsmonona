@@ -6,15 +6,14 @@ import Image from "next/image";
 
 export default function Header() {
     return (
-        <header className="py-3 mb-4 border-bottom">
+        <header className="py-2 mb-4 border-bottom">
             
             
             <nav id="headerNav" className="container d-flex flex-wrap navbar navbar-expand-lg" aria-label="Main Navigation">
                 
 
                     <Link href={"/"} className="navbar-brand d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-                        Golden Nails
-                        {/* <Image src={"/images/Nails-by-Bonnie.png"} alt="Nails by Bonnie Nail Salon" className="img-fluid" style={{ maxHeight: "60px", width: "auto" }} width={200} height={60} /> */}
+                        <Image src={"/images/Golden-Nail-Spa-Horizontal.png"} alt="Golden Nails and Spa" className="img-fluid" style={{ maxHeight: "60px", width: "auto" }} width={200} height={60} />
                     </Link>
                     
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation"> 
@@ -50,9 +49,9 @@ export default function Header() {
                             {/* <li className="nav-item">
                                 <Link href={"/about"} className="nav-link">About Bonnie</Link>
                             </li> */}
-                            <li>
+                            {/* <li>
                                 <button id="themeToggler" className="btn fs-4 fa-solid fa-circle-half-stroke"></button>
-                            </li>
+                            </li> */}
                         </ul>
 
 

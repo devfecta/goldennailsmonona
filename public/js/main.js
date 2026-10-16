@@ -1,5 +1,5 @@
 
-
+/*
 const toggler = document.getElementById('themeToggler');
 
 // Check for saved user preference, otherwise default to light
@@ -17,4 +17,4 @@ toggler.addEventListener('click', () => {
   document.documentElement.setAttribute('data-bs-theme', newTheme);
   localStorage.setItem('theme', newTheme);
 });
-
+*/
