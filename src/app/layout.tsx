@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Caudex } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../../public/css/globals.css";
@@ -8,14 +8,9 @@ import Script from 'next/script';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const caudex = Caudex({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -58,7 +53,7 @@ export default function RootLayout({
     <html lang="en" data-bs-theme="dark">
       <body className="bg-body text-body-secondary">
         <Header/>
-        <main>
+        <main className={caudex.className}>
           {children}
         </main>
         <Footer />

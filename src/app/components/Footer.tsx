@@ -18,7 +18,7 @@ export default function Footer() {
 
 	const [businessData, setBusiness] = useState(
 		{
-			/* // Add Later
+
 			postalAddress: {
 				"regionCode": "US",
 				"languageCode": "en-US",
@@ -46,7 +46,7 @@ export default function Footer() {
 					"Sunday: 12:30 - 5:00 PM"
 				],
 			}
-			*/
+
 		}
 	);
 	// const [loading, setLoading] = useState(true);
@@ -95,38 +95,35 @@ export default function Footer() {
 				<div className='container'>
 					<div className="row justify-content-between align-items-center">
 
-						{/* <div className="col-12 col-md-6 col-lg-4 col-xl-3 align-items-center">
-							<Image src="/images/Nails-by-Bonnie.png" className="my-2 mx-md-auto img-fluid" alt="Nail Services by Bonnie" width="200" height="150" loading="eager" /><br/>
+
+						<div className="col-12 col-md-6 col-lg-4 col-xl-3 align-items-center">
+							<Image src={"/images/Golden-Nail-Spa-Horizontal.png"} alt="Golden Nails and Spa" className="my-2 mx-md-auto img-fluid" width="300" height="150" loading="eager" /><br />
 
 						</div>
 						<div className="col-12 col-md-6 col-lg-4 align-items-center text-body-secondary">
 							<p className="mb-2">
 								<Link href={businessData.googleMapsUri} target="_blank">
-								{businessData.postalAddress.addressLines[0]}<br/>
+									{businessData.postalAddress.addressLines[0]}<br />
 									{`
 										${businessData.postalAddress.locality},  ${businessData.postalAddress.administrativeArea.replace("Wisconsin", "WI")} ${businessData.postalAddress.postalCode}
-									`}<br/>
-									<em className="fs-6">(Located in Efi&apos;s Nails)</em><br/>
+									`}
 								</Link>
 							</p>
 							<p className="mb-2">
 								Call or Text: <Link href={`tel:${businessData.internationalPhoneNumber.replace(/[\s-]/gi, '')}`}>{businessData.nationalPhoneNumber}</Link>
 							</p>
 							<p className="mb-2">
-								e-Mail: <Link href={"mailto:nailsbybonniemadison@gmail.com"}>NailsByBonnieMadison@gmail.com</Link>
+								e-Mail: <Link href={"mailto:goldennailsmonona@gmail.com"}>GoldenNailsMonona@gmail.com</Link>
 							</p>
 						</div>
 						<div className="col-12 col-md-6 col-lg-4 col-xl-3 align-items-center">
 							<ul className="list-unstyled text-body-secondary mb-1">
-								{
-									businessData.regularOpeningHours.weekdayDescriptions.map((date, index, []) => (
-										<li key={index}>{date}</li>
-									))
-								}
+								{businessData.regularOpeningHours.weekdayDescriptions.map((date, index, []) => (
+									<li key={index}>{date}</li>
+								))}
 							</ul>
-							<p className='small'>For more up-to-date times <Link href={businessData.googleMapsUri} target="_blank">click here to view Bonnie&apos;s Google Maps Profile</Link>.</p>
+							<p className='small'>For more up-to-date times <Link href={businessData.googleMapsUri} target="_blank">click here to view Golden Nail & Spa&apos;s Google Maps Profile</Link>.</p>
 						</div>
-
 						<div className="col-12 col-md-6 col-lg-4 col-xl-2">
 							<a className="fs-1" href="https://www.instagram.com/nailsbybonniemadison" target="_blank" aria-label="Instagram">
 								<i className="fa-brands fa-square-instagram"></i>
@@ -134,12 +131,11 @@ export default function Footer() {
 							<a className="fs-1" href="https://www.facebook.com/nailsbybonniemadison/" target="_blank" aria-label="Facebook">
 								<i className="fa-brands fa-facebook"></i>
 							</a>
-						</div> */}
-
+						</div>
 
 
 						<div className="col-12 col-md-6 col-lg-12 text-body-secondary">
-								© {copyright.currentYear} Golden Nails &amp; Spa
+								© {copyright.currentYear} Golden Nails & Spa
 						</div>
 						
 					</div>
