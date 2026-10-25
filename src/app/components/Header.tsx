@@ -13,7 +13,7 @@ export default function Header() {
                 
 
                     <Link href={"/"} className="navbar-brand d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-                        <Image src={"/images/Golden-Nail-Spa-Horizontal.png"} alt="Golden Nails and Spa" className="img-fluid" style={{ maxHeight: "60px", width: "auto" }} width={200} height={60} />
+                        <Image src={"/images/Golden-Nail-Spa-Horizontal.png"} alt="Golden Nails and Spa" className="img-fluid" style={{ height: "60px", width: "auto" }} width={200} height={60} />
                     </Link>
                     
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation"> 
@@ -22,26 +22,26 @@ export default function Header() {
                     
                     <div className="collapse navbar-collapse justify-content-end" id="mainMenu">
 
-                        <ul className="navbar-nav mb-2">
-                            <li className="nav-item">
+                        <ul className="navbar-nav mb-2 lh-lg">
+                            <li className="nav-item text-center">
                                 <Link href={"/"} className="nav-link">
                                     Home
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item text-center">
                                 <Link href={"/nail-care-services"} className="nav-link">Nail Care Services</Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item text-center">
                                 <Link href="" className="nav-link">
                                     Book Online
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item text-center">
                                 <Link href={""} className="nav-link">
                                     Gift Cards
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item text-center">
                                 <Link href={""} className="nav-link" target="_blank">
                                     Write a Review
                                 </Link>

@@ -14,12 +14,9 @@ const caudex = Caudex({
 });
 
 export const metadata: Metadata = {
-  title: "Golden Nails - Monona",
+  title: "Golden Nails & Spa - Monona",
   description: "Looking for top-rated nail care in Monona, WI? Visit Golden Nails for manicures, pedicures, gel nails, and custom nail art. Book your appointment today!",
-  icons: {
-		icon: 'images/favicon.png',
-		apple: 'images/favicon.png', 
-	},
+  icons: './favicon.png',
 	openGraph: {
 		url: 'https://goldennailsmonona.com',
     	siteName: 'Golden Nails',

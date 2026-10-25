@@ -91,7 +91,7 @@ export default function Footer() {
 
 
     return (
-			<footer className="py-3 my-4 border-top">
+			<footer className="py-3 my-4">
 				<div className='container'>
 					<div className="row justify-content-between align-items-center">
 
@@ -122,7 +122,7 @@ export default function Footer() {
 									<li key={index}>{date}</li>
 								))}
 							</ul>
-							<p className='small'>For more up-to-date times <Link href={businessData.googleMapsUri} target="_blank">click here to view Golden Nail & Spa&apos;s Google Maps Profile</Link>.</p>
+							<p className='small'>For more up-to-date times <Link href={businessData.googleMapsUri} target="_blank">click here to view Golden Nails & Spa&apos;s Google Maps Profile</Link>.</p>
 						</div>
 						<div className="col-12 col-md-6 col-lg-4 col-xl-2">
 							<a className="fs-1" href="https://www.instagram.com/nailsbybonniemadison" target="_blank" aria-label="Instagram">

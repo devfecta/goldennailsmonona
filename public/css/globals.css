@@ -185,6 +185,14 @@
 	--bs-form-invalid-border-color: #ea868f;
 }
 
+body {
+	letter-spacing: 0.05rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+}
+
 /*
 Gold Colors Light to Dark
 #f6f2c0
@@ -238,7 +246,7 @@ Gold Colors Light to Dark
 	background: linear-gradient(90deg, #cb9b51 0%, #f6f2c0 50%, #cb9b51 100%);
 	background-size: 200% 100%;
 	transition: all 0.3s ease;
-	border: unset;
+	border: 1px solid #cb9b51;
 	font-weight: 600;
 }
 .btn-primary:hover, 
@@ -246,6 +254,7 @@ Gold Colors Light to Dark
 .btn-primary:focus {
 	animation: shimmer 3s infinite;
 	color: #462523;
+	border: 1px solid #cb9b51;
 }
 /* 
 .btn-check:focus + .btn-primary,
