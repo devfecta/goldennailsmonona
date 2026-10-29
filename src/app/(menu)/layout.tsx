@@ -1,0 +1,64 @@
+import type { Metadata } from "next";
+import { Caudex } from "next/font/google";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../../../public/css/globals.css";
+import BootstrapClient from "../(main)/components/BootstrapClient";
+import Script from 'next/script';
+import HeaderMenu from "../(main)/components/HeaderMenu";
+import Footer from "../(main)/components/Footer";
+
+const caudex = Caudex({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+export const metadata: Metadata = {
+  title: "Golden Nails & Spa - Menu",
+  description: "Looking for top-rated nail care in Monona, WI? Visit Golden Nails for manicures, pedicures, gel nails, and custom nail art. Book your appointment today!",
+  icons: './favicon.png',
+	openGraph: {
+		url: 'https://goldennailsmonona.com/menu',
+    	siteName: 'Golden Nails',
+		locale: 'en_US',
+    	type: 'website',
+	},
+	alternates: {
+    canonical: 'https://goldennailsmonona.com/menu',
+  	},
+	robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+		index: true,
+		follow: true,
+		noimageindex: false,
+		'max-video-preview': -1,
+		'max-image-preview': 'large',
+		'max-snippet': -1,
+    },
+	},
+};
+
+export default function MenuLayout(
+  {
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>
+) {
+  return (
+    <html lang="en" data-bs-theme="dark">
+      <body className="bg-body text-body-secondary">
+        <HeaderMenu/>
+        <main className={caudex.className}>
+          {children}
+        </main>
+        <Footer />
+        <BootstrapClient />
+        <Script src="js/main.js" strategy="afterInteractive" />
+      </body>
+    </html>
+  );
+}

@@ -3,10 +3,10 @@ import { Caudex } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../../public/css/globals.css";
-import BootstrapClient from "./components/BootstrapClient";
+import BootstrapClient from "./(main)/components/BootstrapClient";
 import Script from 'next/script';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./(main)/components/Header";
+import Footer from "./(main)/components/Footer";
 
 const caudex = Caudex({
   subsets: ["latin"],

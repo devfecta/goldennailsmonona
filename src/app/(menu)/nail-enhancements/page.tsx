@@ -1,8 +1,8 @@
 import Image from "next/image";
-import BootstrapClient from "../components/BootstrapClient";
+import BootstrapClient from "../../(main)/components/BootstrapClient";
 import styles from "../page.module.css";
 
-export default function Home() {
+export default function Menu() {
   return (
 	<>
 		<section className="container mb-5">
